@@ -1,0 +1,1 @@
+mklink /h ..\.gitconfig .\gitconfig
