@@ -16,8 +16,8 @@
 	st = status
 	ss = status
 	#remotes
-	co = checkout -v
-	ci = commit -v
+	co = checkout
+	ci = commit
 	fe = fetch -v
 [core]
 	autocrlf = true
