@@ -6,16 +6,25 @@
 	name = Vinicius Canto Xavier
 	email = vixavier@microsoft.com
 [alias]
+	#log
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
 	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --numstat
+	# same as lg
+	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	
+	#status
 	st = status
-	co = checkout
-	ci = commit
+	ss = status
+
+	#remotes
+	co = checkout -v
+	ci = commit -v
 	fe = fetch -v
 	br = branch
 [core]
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
 [push]
+	#changing the default push (with no parameters) to push only current branch to the remote repo
 	default = simple
