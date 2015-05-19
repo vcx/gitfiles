@@ -18,7 +18,7 @@
 	#remotes
 	co = checkout
 	ci = commit
-	fe = fetch -v
+	fe = fetch -v --all
 [core]
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
