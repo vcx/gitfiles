@@ -1,7 +1,7 @@
 [gui]
 	recentrepo = C:/temp/source
 [credential]
-	helper = !'C:\\Users\\vixavier\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
+	helper = !'C:\\Users\\vinicius\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
 [user]
 	name = Vinicius Canto Xavier
 	email = vixavier@microsoft.com
@@ -25,3 +25,5 @@
 [push]
 	#changing the default push (with no parameters) to push only current branch to the remote repo
 	default = simple
+
+# vim:ft=gitconfig

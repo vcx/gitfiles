@@ -1,1 +1,1 @@
-mklink /h ..\.gitconfig .\gitconfig
+copy .gitconfig ..
