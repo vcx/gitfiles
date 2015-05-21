@@ -19,6 +19,9 @@
 	co = checkout
 	ci = commit
 	fe = fetch -v
+
+	#others
+	lfo = ls-files --others
 [core]
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
