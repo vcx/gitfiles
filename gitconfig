@@ -29,4 +29,21 @@
 	#changing the default push (with no parameters) to push only current branch to the remote repo
 	default = simple
 
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+
 # vim:ft=gitconfig
