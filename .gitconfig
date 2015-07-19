@@ -1,2 +1,5 @@
 [include]
-	path = .\\gitfiles\\gitconfig
+	;path = .\\gitfiles\\gitconfig
+	path = ~/gitfiles/gitconfig
+[credential]
+	helper = !'~/AppData/Roaming/GitCredStore/git-credential-winstore.exe'
