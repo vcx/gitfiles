@@ -1,24 +1,22 @@
 [gui]
 	recentrepo = C:/temp/source
-[credential]
-	helper = !'C:\\Users\\vinicius\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
 [user]
 	name = Vinicius Canto Xavier
 	email = vixavier@microsoft.com
 [alias]
 	#log
+	l  = log --graph --pretty=format:'%C(white)%s%n%C(yellow)%h %s  %C(red)[%an]  %C(cyan)[%cr]%n'
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
 	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --numstat
 	# same as lg
 	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	#status
-	st = status
-	ss = status
+	s = status
 	#remotes
 	co = checkout
 	ci = commit
-	fe = fetch -v --all
+	f = fetch -v #--all
 [core]
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
