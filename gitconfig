@@ -5,12 +5,10 @@
 	email = vixavier@microsoft.com
 [alias]
 	#log
-	l  = log --graph --pretty=format:'%C(white)%s%n%C(yellow)%h %s  %C(red)[%an]  %C(cyan)[%cr]%n'
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
-	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --numstat
-	# same as lg
-	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	l  = log --graph --pretty=format:'%C(yellow)%h  %C(red)[%an]  %C(white)[%cr - %cd]  %C(cyan)%d%n  %C(white)%s%n'
+	la  = log --graph --pretty=format:'%C(yellow)%h  %C(red)[%an]  %C(white)[%cr - %cd]  %C(cyan)%d%n  %C(white)%s%n' --all
+	lf  = log --graph --pretty=format:'%C(yellow)%h  %C(red)[%an]  %C(white)[%cr - %cd]  %C(cyan)%d%n  %C(white)%s%n' --all --name-status
+
 	#status
 	s = status
 	#remotes
