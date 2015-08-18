@@ -22,4 +22,24 @@
 	#changing the default push (with no parameters) to push only current branch to the remote repo
 	default = simple
 
+#diff configuration
+[diff]
+	tool = vsdiffmerge
+[difftool]
+	prompt = true
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+[difftool "vsdiffmerge"]
+	keepbackup = false
+
+[merge]
+	tool = vsdiffmerge
+[mergetool]
+	prompt = true
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	trustexitcode = true
+[mergetool "vsdiffmerge"]
+	keepbackup = false
+
 # vim:ft=gitconfig
