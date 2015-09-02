@@ -14,8 +14,15 @@
 	#remotes
 	co = checkout
 	ci = commit
-	f = fetch -v #--all
+	f = fetch -v
+
+	wtf = whatchanged -p
+	u = !"git fetch && git status"
+	bl = branch -rvva
+	stalk = !"git l --author "
+	find = !"git l --grep "
 [core]
+
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
 [push]
