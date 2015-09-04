@@ -15,6 +15,7 @@
 	co = checkout
 	ci = commit
 	f = fetch -v #--all
+	u = !git fetch --all && git status
 [core]
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
