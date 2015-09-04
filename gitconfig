@@ -1,5 +1,6 @@
 [gui]
 	recentrepo = C:/temp/source
+
 [user]
 	name = Vinicius Canto Xavier
 	email = vixavier@microsoft.com
@@ -16,7 +17,15 @@
 	ci = commit
 	f = fetch -v #--all
 	u = !git fetch --all && git status
+	f = fetch -v
+
+	wtf = whatchanged -p
+	u = !"git fetch && git status"
+	bl = branch -rvva
+	stalk = !"git l --author "
+	find = !"git l --grep "
 [core]
+
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
 [push]
