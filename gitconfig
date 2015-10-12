@@ -19,10 +19,12 @@
 	u = !git fetch --all && git status
 	f = fetch -v
 
-	wtf = whatchanged -p
 	u = !"git fetch && git status"
 	bl = branch -rvva
-	stalk = !"git l --author "
+
+	# fun trace commands
+	wtf = whatchanged -p
+	stalk = !"git lf --author "
 	find = !"git l --grep "
 [core]
 
