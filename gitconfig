@@ -1,6 +1,9 @@
 [gui]
 	recentrepo = C:/temp/source
 
+[http]
+	sslVerify = false
+
 [user]
 	name = Vinicius Canto Xavier
 	email = vixavier@microsoft.com
@@ -26,10 +29,12 @@
 	wtf = whatchanged -p
 	stalk = !"git lf --author "
 	find = !"git l --grep "
-[core]
 
+[core]
+	editor = 'c:/Program Files (x86)/Vim/vim74/gvim.exe'
 	autocrlf = true
 	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
+
 [push]
 	#changing the default push (with no parameters) to push only current branch to the remote repo
 	default = simple
