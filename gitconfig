@@ -24,6 +24,11 @@
 
 	u = !"git fetch && git status"
 	bl = branch -rvva
+	bo = branch -rvv --no-merged
+	bi = branch -rvv --merged
+
+	bfix = branch -rvv --list */bugfix/* --no-merged
+	hfix = branch -rvv --list */hotfix/* --no-merged
 
 	# fun trace commands
 	wtf = whatchanged -p
