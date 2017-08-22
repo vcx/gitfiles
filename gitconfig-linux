@@ -1,0 +1,26 @@
+#linux-specific git config (paths, mostly)
+
+[core]
+	editor = vim
+
+
+[diff]
+	#tool = vsdiffmerge
+[difftool]
+	#prompt = true
+[difftool "vsdiffmerge"]
+	#cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+[difftool "vsdiffmerge"]
+	#keepbackup = false
+
+[merge]
+	#tool = vsdiffmerge
+[mergetool]
+	#prompt = true
+[mergetool "vsdiffmerge"]
+	#cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	#trustexitcode = true
+[mergetool "vsdiffmerge"]
+	#keepbackup = false
+
+# vim:ft=gitconfig

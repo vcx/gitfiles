@@ -1,12 +1,10 @@
-[gui]
-	recentrepo = C:/temp/source
-
 [http]
 	sslVerify = false
 
 [user]
 	name = Vinicius Canto Xavier
 	email = vixavier@microsoft.com
+
 [alias]
 	#log
 	l  = log --graph --pretty=format:'%C(yellow)%h  %C(red)[%an]  %C(white)[%cr - %cd]  %C(cyan)%d%n  %C(white)%s%n'
@@ -36,32 +34,13 @@
 	find = !"git l --grep "
 
 [core]
-	editor = 'c:/Program Files (x86)/Vim/vim74/gvim.exe'
 	autocrlf = true
-	excludesfile = C:\\Users\\vixavier\\Documents\\gitignore_global.txt
+	excludesfile = ~/Documents/gitignore_global.txt
 
 [push]
 	#changing the default push (with no parameters) to push only current branch to the remote repo
 	default = simple
 
 #diff configuration
-[diff]
-	tool = vsdiffmerge
-[difftool]
-	prompt = true
-[difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
-[difftool "vsdiffmerge"]
-	keepbackup = false
-
-[merge]
-	tool = vsdiffmerge
-[mergetool]
-	prompt = true
-[mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
-	trustexitcode = true
-[mergetool "vsdiffmerge"]
-	keepbackup = false
 
 # vim:ft=gitconfig
