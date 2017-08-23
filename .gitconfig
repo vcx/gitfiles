@@ -5,4 +5,4 @@
 	writelog = true
 
 [include]
-	path = '~/gitfiles/global-gitconfig'
+	path = ~/gitfiles/gitconfig-global
